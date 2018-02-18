@@ -1,19 +1,19 @@
 import React from 'react'
 import './Club.css'
 
-function Club({club}) {
+function Club({standing}) {
     return (
         <tr>
-            <th>{club.position}</th>
-            <th id="teamName"><img src={club.crestURI} height="20" width="20" alt={club.teamName} align="left" />{club.teamName}</th>
-            <th>{club.playedGames}</th>
-            <th>{club.points}</th>
-            <th>{club.wins}</th>
-            <th>{club.draws}</th>
-            <th>{club.losses}</th>
-            <th>{club.goals}</th>
-            <th>{club.goalsAgainst}</th>
-            <th>{club.goalDifference}</th>
+            <td>{standing.position}</td>
+            <td id="teamName"><img src={standing.crestURI} height="20" width="20" alt={standing.teamName} align="left" />{standing.teamName}</td>
+            <td>{standing.playedGames}</td>
+            <td>{standing.points}</td>
+            <td>{standing.wins}</td>
+            <td>{standing.draws}</td>
+            <td>{standing.losses}</td>
+            <td>{standing.goalsAgainst}</td>
+            <td>{standing.goals}</td>
+            <td>{standing.goalDifference}</td>
         </tr>
     )
 }

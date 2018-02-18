@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import Club from './Club'
+import Football from './Football'
 
 class App extends Component {
   state = {}
@@ -12,26 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">{this.state.data ? this.state.data.leagueCaption : "Loading..."}</h1>
-        </header>
-        <div className="Records">
-          <table>
-            <tr>
-              <th></th>
-              <th>Club</th>
-              <th>GP</th>
-              <th>PTS</th>
-              <th>W</th>
-              <th>D</th>
-              <th>L</th>
-              <th>GF</th>
-              <th>GA</th>
-              <th>GD</th>
-            </tr>
-            {this.state.data ? this.state.data.standing.map(club => <Club club={club} />) : ""}
-          </table>
-        </div>
+        {this.state.data ? <Football data={this.state.data} /> : "Loading..."}
       </div>
     )
   }

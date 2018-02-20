@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://qpakzk.github.io/Football-Club-Records",
+  "homepage": "https://qpakzk.github.io/Football-Club-Records",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }

@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   _callAPI = () => {
-    return fetch("http://api.football-data.org/v1/competitions/445/leagueTable", {
+    return fetch("https://api.football-data.org/v1/competitions/445/leagueTable", {
       method: 'GET',
       headers: {
         "X-Auth-Token": "e05f3a96051c4b88844c04b134ed8c82",
